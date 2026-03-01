@@ -4,73 +4,234 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marián Gono - AUTOOPRAVOVŇA | Profesionálny autoservis Očkov</title>
+    <meta name="description" content="Profesionálny autoservis v Očkove. Diagnostika, opravy, údržba všetkých značiek. 20 rokov skúseností.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>body{font-family:'Inter',sans-serif}</style>
 </head>
 <body class="bg-gray-50">
-    <!-- Hero -->
-    <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl font-bold mb-4">Marián Gono</h1>
-            <p class="text-2xl mb-2">AUTOOPRAVOVŇA</p>
-            <p class="text-lg opacity-90">Profesionálny autoservis v Očkove</p>
-            <div class="mt-8">
-                <a href="tel:0905616444" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full text-lg transition">Zavolajte nám</a>
+    <!-- Top Bar -->
+    <div class="bg-gray-900 text-white py-2 text-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span><i class="fas fa-phone-alt mr-2"></i>0905 616 444</span>
+                <span><i class="fas fa-envelope mr-2"></i>gono.autoservis@gmail.com</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span><i class="fas fa-clock mr-2"></i>Po-Pia: 8:00-17:00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-900">Marián Gono <span class="text-orange-500">AUTOOPRAVOVŇA</span></div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#sluzby" class="text-gray-700 hover:text-blue-900 transition">Služby</a>
+                <a href="#onas" class="text-gray-700 hover:text-blue-900 transition">O nás</a>
+                <a href="#preco" class="text-gray-700 hover:text-blue-900 transition">Prečo my</a>
+                <a href="#kontakt" class="text-gray-700 hover:text-blue-900 transition">Kontakt</a>
+            </div>
+            <a href="tel:0905616444" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full transition">
+                <i class="fas fa-phone-alt mr-2"></i>Zavolať
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-white py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.05\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">Overený autoservis</div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">Profesionálny autoservis<br><span class="text-orange-400">v Očkove</span></h1>
+                <p class="text-xl mb-8 text-gray-200">Diagnostika, opravy a údržba všetkých značiek vozidiel. Rýchlo, kvalitne a za férové ceny.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:0905616444" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full text-lg transition text-center">
+                        <i class="fas fa-phone-alt mr-2"></i>Zavolať teraz
+                    </a>
+                    <a href="#sluzby" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white font-bold py-4 px-8 rounded-full text-lg transition text-center">
+                        Naše služby
+                    </a>
+                </div>
+                <div class="mt-12 flex items-center space-x-8">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-orange-400">20+</div>
+                        <div class="text-sm text-gray-300">rokov skúseností</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-orange-400">1000+</div>
+                        <div class="text-sm text-gray-300">spokojných klientov</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-orange-400">100%</div>
+                        <div class="text-sm text-gray-300">záruka kvality</div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- Služby -->
-    <section class="py-16 container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Naše služby</h2>
+    <section id="sluzby" class="py-20 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Naše služby</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Komplexné služby pre vaše vozidlo pod jednou strechou</p>
+        </div>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
-                <div class="text-5xl mb-4">🔧</div>
-                <h3 class="text-xl font-bold mb-2">Opravy</h3>
-                <p class="text-gray-600">Komplexné opravy všetkých značiek vozidiel</p>
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition group">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 transition">
+                    <i class="fas fa-wrench text-2xl text-blue-600 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">Opravy</h3>
+                <p class="text-gray-600 mb-4">Komplexné opravy motorov, prevodoviek, podvozkov a všetkých systémov vozidla.</p>
+                <ul class="text-sm text-gray-500 space-y-2">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Opravy motorov</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Prevodovky</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Podvozky</li>
+                </ul>
             </div>
-            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
-                <div class="text-5xl mb-4">🛠️</div>
-                <h3 class="text-xl font-bold mb-2">Údržba</h3>
-                <p class="text-gray-600">Pravidelná údržba a servisné prehliadky</p>
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition group">
+                <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-orange-500 transition">
+                    <i class="fas fa-tools text-2xl text-orange-500 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">Údržba</h3>
+                <p class="text-gray-600 mb-4">Pravidelná údržba a servisné prehliadky pre dlhú životnosť vášho vozidla.</p>
+                <ul class="text-sm text-gray-500 space-y-2">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Výmena oleja</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Brzdové systémy</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Prehliadky</li>
+                </ul>
             </div>
-            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
-                <div class="text-5xl mb-4">🔍</div>
-                <h3 class="text-xl font-bold mb-2">Diagnostika</h3>
-                <p class="text-gray-600">Moderná počítačová diagnostika vozidiel</p>
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition group">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-600 transition">
+                    <i class="fas fa-laptop-code text-2xl text-green-600 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">Diagnostika</h3>
+                <p class="text-gray-600 mb-4">Moderná počítačová diagnostika všetkých elektronických systémov vozidla.</p>
+                <ul class="text-sm text-gray-500 space-y-2">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Chybové kódy</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Motorová elektronika</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>ABS, ESP</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Kontakt -->
-    <section class="bg-gray-900 text-white py-16">
+    <!-- O nás -->
+    <section id="onas" class="bg-gray-100 py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Kontaktujte nás</h2>
-            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Adresa</h3>
-                    <p class="mb-2">📍 Očkov 35</p>
-                    <p class="mb-2">916 22 Očkov</p>
-                    <p class="mb-6">Okres Nové Mesto nad Váhom</p>
-                    
-                    <h3 class="text-xl font-bold mb-4">Kontakt</h3>
-                    <p class="mb-2">📞 <a href="tel:0905616444" class="text-orange-400 hover:text-orange-300">0905 616 444</a></p>
-                    <p>✉️ gono.autoservis@gmail.com</p>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Prečo si vybrať práve nás?</h2>
+                    <p class="text-gray-600 mb-6 text-lg">Sme rodinný autoservis s dlhoročnými skúsenosťami. Naším cieľom je poskytnúť kvalitné služby za férové ceny.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-award text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Kvalita na prvom mieste</h4>
+                                <p class="text-gray-600">Používame len originálne alebo overené náhradné diely.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-bolt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Rýchle vybavenie</h4>
+                                <p class="text-gray-600">Väčšinu opráv vybavíme do 24-48 hodín.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-hand-holding-usd text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Férové ceny</h4>
+                                <p class="text-gray-600">Cenu vždy dohodneme vopred, žiadne prekvapenia.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Otváracie hodiny</h3>
-                    <p class="mb-2">Pondelok - Piatok: 8:00 - 17:00</p>
-                    <p class="mb-2">Sobota: 8:00 - 12:00</p>
-                    <p>Nedeľa: Zatvorené</p>
+                <div class="bg-white p-8 rounded-2xl shadow-xl">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Kontaktný formulár</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Meno</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none" placeholder="Vaše meno">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Telefón</label>
+                            <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none" placeholder="0900 000 000">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Správa</label>
+                            <textarea class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none h-32" placeholder="Popíšte váš problém..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition">
+                            Odoslať správu
+                        </button>
+                    </form>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-blue-900 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Potrebujete opraviť auto?</h2>
+            <p class="text-xl mb-8 text-gray-300">Zavolajte nám ešte dnes a dohodnite si termín.</p>
+            <a href="tel:0905616444" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-full text-xl transition">
+                <i class="fas fa-phone-alt mr-3"></i>0905 616 444
+            </a>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="py-20 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Kontaktujte nás</h2>
+            <p class="text-xl text-gray-600">Sme tu pre vás</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-map-marker-alt text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Adresa</h3>
+                <p class="text-gray-600">Očkov 35<br>916 22 Očkov<br>Okres Nové Mesto nad Váhom</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-phone-alt text-2xl text-orange-500"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Telefón</h3>
+                <p class="text-gray-600"><a href="tel:0905616444" class="text-blue-600 hover:text-blue-800 font-semibold">0905 616 444</a></p>
+                <p class="text-sm text-gray-500 mt-2">gono.autoservis@gmail.com</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-clock text-2xl text-green-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Otváracie hodiny</h3>
+                <p class="text-gray-600">Pondelok - Piatok: 8:00 - 17:00<br>Sobota: 8:00 - 12:00<br>Nedeľa: Zatvorené</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-400 py-6 text-center">
-        <p>© 2024 Marián Gono - AUTOOPRAVOVŇA | Všetky práva vyhradené</p>
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">© 2024 Marián Gono - AUTOOPRAVOVŇA | Všetky práva vyhradené</p>
+            <p class="text-sm">Profesionálny autoservis v Očkove</p>
+        </div>
     </footer>
 </body>
 </html>
